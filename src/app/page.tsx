@@ -5,7 +5,10 @@ export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
       <Image
-        // unoptimized
+        // toggle unoptimized here to see saturation drop.
+        unoptimized
+        quality={100}
+        placeholder="blur"
         className="object-cover"
         fill
         sizes="100vw"
